@@ -19,13 +19,13 @@ function changeColor() {
 }
 function startBtnFunction() {
   if (startBtn.click) {
-    startBtn.disabled === true;
+    startBtn.disabled = true;
     intervalId = setInterval(changeColor, 1000);
   }
 }
 function stopBtnFunction() {
   if (stopBtn.click) {
-    startBtn.disabled === false;
+    startBtn.disabled = false;
     clearInterval(intervalId);
   }
 }
